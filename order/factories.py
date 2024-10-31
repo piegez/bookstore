@@ -17,7 +17,7 @@ class OrderFactory(factory.django.DjangoModelFactory):
 
     @factory.post_generation
     def product(self, create, extracted, **kwargs):
-        if not create
+        if not create:
             return
 
         if extracted:
