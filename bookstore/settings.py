@@ -10,7 +10,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "django-insecure-f*k@=53bc5!shef1-6w+m
 DEBUG = int(os.environ.get("DEBUG", default=1))
 
 # ALLOWED_HOSTS configuration
-ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1 localhost").split()
+ALLOWED_HOSTS = os.environ.get("DJANGO_ALLOWED_HOSTS", "127.0.0.1,localhost,piegez.pythonanywhere.com").split(',')
 
 # Application definition
 
