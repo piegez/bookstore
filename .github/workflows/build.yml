@@ -7,7 +7,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.10]
+        python-version: [3.8, 3.9]
 
     runs-on: ubuntu-latest
 
@@ -30,7 +30,7 @@ jobs:
 
     - name: Install dependencies
       shell: bash
-      run: poetry install
+      run: python -m poetry install
 
     - name: Test
       run: |
